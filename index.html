@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ángel Fuentes | Fotografía</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Ángel Fuentes</h1>
+        <nav>
+            <a href="#galeria" class="nav-link">Portafolio</a>
+            <a href="#sobre-mi" class="nav-link">Bio</a>
+            <a href="#contacto" class="nav-link">Contacto</a>
+        </nav>
+    </header>
+
+    <section id="galeria">
+        <div class="filtros">
+            <span class="filtro-link activo" onclick="filtrar('todas', this)">Todo</span>
+            <span class="filtro-link" onclick="filtrar('gastronomia', this)">Gastronomía</span> 
+            <span class="filtro-link" onclick="filtrar('clientes', this)">Clientes</span>
+        </div>
+
+        <div class="galeria-grid" id="grid-fotos">
+            <div class="foto-container todas gastronomia">
+                <img src="Chicken wafle.jpg" alt="Chicken Waffle">
+            </div>
+            <div class="foto-container todas clientes">
+                <img src="Clientes.jpg" alt="Clientes">
+            </div>
+            <div class="foto-container todas gastronomia">
+                <img src="Nachos.jpg" alt="Nachos">
+            </div>
+            <div class="foto-container todas gastronomia">
+                <img src="Omellet 2.jpg" alt="Omelet 2">
+            </div>
+            <div class="foto-container todas gastronomia">
+                <img src="Omellet.jpg" alt="Omelet">
+            </div>
+            <div class="foto-container todas gastronomia">
+                <img src="Pan con pure.jpg" alt="Pan con puré">
+            </div>
+            <div class="foto-container todas gastronomia">
+                <img src="Papas y sepa que.jpg" alt="Papas">
+            </div>
+            <div class="foto-container todas gastronomia">
+                <img src="Plato de fruta.jpg" alt="Plato de fruta">
+            </div>
+            <div class="foto-container todas gastronomia">
+                <img src="Tocino y huevo.jpg" alt="Tocino y huevo">
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre-mi">
+        <h2>Biografía</h2>
+        <div class="sobre-mi-container">
+            <div class="foto-perfil">
+                <img src="bajitaLT.jpg.jpeg" alt="Foto de Ángel Fuentes - La Tenaza Baja">
+            </div>
+            
+            <div class="sobre-mi-contenido">
+                <p>Capturando la tensión entre la luz y la sombra. <span>Ángel Fuentes</span> se especializa en crear imágenes atemporales y despojar el ruido visual para revelar la auténtica esencia de cada sujeto.</p>
+                <br>
+                <p>Con base en Hermosillo, Sonora, mi trabajo busca transformar lo cotidiano en algo extraordinario. Cuento con amplia experiencia en el manejo de cámaras fotográficas profesionales y un sólido dominio de la suite de Adobe (Lightroom, Photoshop) para llevar cada imagen a su máximo nivel en postproducción.</p>
+                 <br>
+                <p>Trabajando desde 2000 y siempre.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto">
+        <h2>Hablemos</h2>
+        <div class="contacto-container">
+            <div class="redes-info">
+                <p>Disponible para comisiones comerciales, gastronomía y retratos.</p>
+                <a href="mailto:tenazabaja@gmail.com">tenazabaja@gmail.com</a>
+                <a href="https://www.instagram.com/bajitalatenaza_/" target="_blank">@bajitalatenaza_</a>
+            </div>
+
+            <div class="formulario">
+                <form action="https://formspree.io/f/meelygoe" method="POST">
+                    <input type="text" name="Nombre" placeholder="Nombre completo" required>
+                    <input type="email" name="email" placeholder="Correo electrónico" required>
+                    <textarea name="Mensaje" rows="1" placeholder="Detalles de tu proyecto..." required></textarea>
+                    <button type="submit">Enviar solicitud</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
